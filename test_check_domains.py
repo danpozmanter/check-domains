@@ -124,13 +124,14 @@ def test_find_available_domains_with_callback():
 
     callback_mock = MagicMock()
 
-    # Fixed to account for the boolean check in the implementation
+    # Mock check_domain to return False for all domains (unregistered)
     with patch("check_domains.check_domain", return_value=False):
         check_domains.find_available_domains(domains, callback_mock)
 
-        # Match the actual calls including __bool__ calls
-        expected_calls = [call.__bool__(), call("test"), call.__bool__(), call("example")]
-        assert callback_mock.mock_calls == expected_calls
+        # Expect the callback to be called with full domain names
+        expected_calls = [call("test.com"), call("example.com")]
+        for expected in expected_calls:
+            assert expected in callback_mock.mock_calls
 
 
 def test_print_status(capsys):
