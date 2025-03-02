@@ -1,0 +1,1 @@
+pdm run py.test
