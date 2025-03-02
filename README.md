@@ -1,6 +1,8 @@
 # check-domains
 Quickly check multiple variations of available domains
 
+[![Tests Passing](https://github.com/danpozmanter/check-domains/actions/workflows/test.yml/badge.svg)](https://github.com/danpozmanter/check-domains/actions)
+
 ## Usage
 
 ```
