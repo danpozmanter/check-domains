@@ -1,5 +1,5 @@
 # check-domains
-Quickly check multiple variations of available domains
+Quickly check multiple variations of available domains.
 
 [![Tests Passing](https://github.com/danpozmanter/check-domains/actions/workflows/test.yml/badge.svg)](https://github.com/danpozmanter/check-domains/actions)
 
@@ -21,9 +21,13 @@ Quickly check multiple variations of available domains
 top_level_domains:
   - com
   - org
-  - net
-  - ngo
-  - community
-  - social
-  - xyz
 ```
+
+## Example File
+
+```
+google
+pumpupthejam
+```
+
+This would check if google.com, google.org, pumpupthejame.com, pumpupthejame.org were available or registered.
