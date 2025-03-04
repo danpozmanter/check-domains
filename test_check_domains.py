@@ -7,7 +7,7 @@ to isolate units and avoid actual network calls.
 """
 
 import pytest
-from unittest.mock import patch, mock_open, MagicMock, call
+from unittest.mock import patch, mock_open, MagicMock
 import os
 import tempfile
 import yaml
