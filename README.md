@@ -30,4 +30,4 @@ google
 pumpupthejam
 ```
 
-This would check if google.com, google.org, pumpupthejame.com, pumpupthejame.org were available or registered.
+This would check if google.com, google.org, pumpupthejam.com, pumpupthejam.org were available or registered.
